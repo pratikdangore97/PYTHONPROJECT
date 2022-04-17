@@ -1,0 +1,5 @@
+.idea/
+employee_first/__pycache__/
+employee_first/views/__pycache__/
+employee_project/__pycache__/
+venv/
