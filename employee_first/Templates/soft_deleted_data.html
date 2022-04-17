@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% extends "base.html" %}
+    <meta charset="UTF-8">
+    <title>{% block title %}Soft Deleted Data{% endblock title %}</title>
+</head>
+
+
+<body>
+{% block body %}
+<h1>Soft Deleted Employee</h1>
+<hr>
+<table  class="table,table-sm,table table-bordered,table text-center" BORDER="3" width=50%>
+    <tr>
+        <th class="text-center">Name</th>
+        <th class="text-center">Designation</th>
+        <th class="text-center">Salary</th>
+        <th class="text-center">Active</th>
+        <th class="text-center">Action</th>
+    </tr>
+    {% for i in softdeletebook %}
+    <tr>
+        <td>{{i.name}}</td>
+        <td>{{i.designation}}</td>
+        <td>{{i.salary}}</td>
+        <td>{{i.is_active}}</td>
+        <td>
+            <form action="{% url 'restore' i.id %}">
+                <input type="submit" value="Restore">
+            </form>
+        </td>
+    </tr>
+    {% endfor %}
+
+</table><br><br>
+
+<a href="{% url 'welcome' %}">
+      <input type="submit" value="Home"/>
+{% endblock body %}
+</body>
+</html>
