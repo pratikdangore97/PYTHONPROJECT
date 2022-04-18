@@ -1,0 +1,22 @@
+asgiref==3.3.4
+autopep8==1.6.0
+comtypes==1.1.7
+distlib==0.3.4
+Django==3.2.2
+django-crispy-forms==1.14.0
+django-mathfilters==1.0.0
+filelock==3.6.0
+mysql-connector-python==2.1.8
+mysqlclient @ file:///C:/Users/pratidan/Downloads/mysqlclient-1.4.6-cp38-cp38-win32.whl
+path==15.1.2
+Pillow==9.1.0
+platformdirs==2.5.1
+pycodestyle==2.8.0
+PyMySQL==1.0.2
+pyttsx3==2.87
+pytz==2021.1
+reportlab==3.6.9
+six==1.16.0
+sqlparse==0.4.1
+toml==0.10.2
+virtualenv==20.13.1
